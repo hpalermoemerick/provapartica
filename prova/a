@@ -1,0 +1,253 @@
+======================HTML======================
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Primeira Página</title>
+   <script src="https://unpkg.com/feather-icons"></script>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <header>
+       <nav>
+           <p>IFPR Viagens</p>
+           <ul>   
+               <li><a href="#home">Home</a></li>
+               <li><a href="#pacotes">Pacotes</a></li>
+               <li><a href="servicos">Serviços</a></li>
+               <li><a href="#contato">Contato</a></li>
+           </ul>
+       </nav>
+       <div id="home" class="header-content">
+           <h1>Monte Fuji</h1>
+           <p>Conheça o monte fuji, veja as belezas naturais desse lugar!</p>
+           <button>saiba mais</button>
+       </div>
+   </header>
+   <section id="pacotes" class="pacotes">
+       <h1 class="pacotes-title">Conheça nossos Pacotes de Viagem!<h1>
+
+
+       <div class="pacotes-cards">
+           <div class="card">
+               <div class="card-tag card-tag-top">
+                   <p>Promoção</p>
+               </div>
+               <div class="card-tag card-tag bottom">
+                   <p>R$ 1.500,00</p>
+               </div>
+               <img class="card-image" src="assets/paris.jpeg" alt="Paris">
+               <div class="card-content">
+                   <h1>Pacote 5 Noites Hotel Premium</h1>
+                   <ul>
+                       <li><i data-feather="coffee"></i>Café da Manhã incluso</li>
+                       <li><i data-feather="wifi"></i>Wifi</li>
+                       <li><i data-feather="gitlab"></i>Pet friendly</li>
+                   </ul>
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-tag card-tag-top">
+                   <p>Promoção</p>
+               </div>
+               <div class="card-tag card-tag bottom">
+                   <p>R$ 2.000,00</p>
+               </div>
+               <img class="card-image" src="assets/chicago.jpeg" alt="chicago">
+               <div class="card-content">
+                   <h1>Pacote 5 Noites Hotel Premium</h1>
+                   <ul>
+                       <li><i data-feather="coffee"></i>Café da Manhã incluso</li>
+                       <li><i data-feather="wifi"></i>Wifi</li>
+                       <li><i data-feather="gitlab"></i>Pet friendly</li>
+                   </ul>
+               </div>
+           </div>
+           <div class="card">
+               <div class="card-tag card-tag-top">
+                   <p>Promoção</p>
+               </div>
+               <div class="card-tag card-tag bottom">
+                   <p>R$ 1.000.000,00</p>
+               </div>
+               <img class="card-image" src="assets/foz.jpeg" alt="Foz do Iguaçu">
+               <div class="card-content">
+                   <h1>Pacote 5 Noites Hotel Premium</h1>
+                   <ul>
+                       <li><i data-feather="coffee"></i>Café da Manhã incluso</li>
+                       <li><i data-feather="wifi"></i>Wifi</li>
+                       <li><i data-feather="gitlab"></i>Pet friendly</li>
+                   </ul>
+               </div>
+           </div> 
+       </div>
+       </div>
+       <script>
+           feather.replace()
+       </script>
+</body>
+</html>
+
+
+
+
+
+
+
+======================CSS======================
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+   box-sizing: border-box;
+}
+
+
+
+
+body {
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+ul {
+   list-style: none;
+   font-weight: bold;
+}
+
+
+a {
+   text-decoration: none;
+   color: inherit
+}
+
+
+button {
+   padding: 10px 15px;
+   border-radius: 8px;
+   border: 0;
+   font-weight: bold;
+   background: #1d61dd;
+   color: white;
+   font-family: 'Montserrat',sans-serif;
+}
+
+
+header {
+   background: no-repeat center/cover url('assets/fuji.jpeg');
+   height: calc(100vh - 150px);
+}
+header nav {
+   display: flex;
+   justify-content: space-between;
+   margin: auto 90px;
+}
+
+
+button:hover{
+   cursor: pointer;
+}
+
+
+header nav p {
+   font-weight: bold;
+}
+
+
+header nav ul {
+   display: flex;
+}
+
+
+header nav ul li {
+   margin: 0 15px;
+}
+
+
+.header-content {
+   max-width: 400px;
+   margin: 150px auto;
+   text-align: center;
+}
+
+
+.header-content h1 {
+   margin-bottom: 10px;
+   font-size: 4rem;
+}
+
+
+.pacotes {
+   background: #70ef96;
+   padding: 15px;
+}
+
+
+.pacotes .pacotes-cards {
+   display: flex;
+   margin: auto;
+   max-width: 950px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+
+.pacotes .pacotes-title {
+   width: 100%;
+   text-align: center;
+   margin: 25px 0;
+}
+
+
+.pacotes .card {
+   width: 250px;
+   height: 200px;
+   background: white;
+   border-radius: 24px 0 0 0;
+   margin: 25px;
+   position: relative;
+}
+
+
+.pacotes .card-image {
+   width: 250px;
+   height: 200px;
+   border-radius: 24px 0 0 0;
+   object-fit: cover;
+}
+
+
+.pacotes .card-content{
+   padding: 0 15px;
+}
+
+
+.pacotes .card-content ul{
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+}
+
+
+.pacotes .card-content ul li{
+   font-size: 0.6rem;
+   display: flex;
+   align-items: center;
+   margin: 3px;
+   color: grey;
+   font-weight: bold;
+}
+
+
+.pacotes .card-content li svg{
+   width: 16px;
+   height: 16px;
+   margin-right: 10px;
+}
+
+
+

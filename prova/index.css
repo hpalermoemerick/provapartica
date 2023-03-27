@@ -1,0 +1,95 @@
+/*===========header====================*/
+header{
+    background-image: url("assets/bgsec.jpeg");
+    background-size: cover;
+    height: 300px;
+    width: 100vw;
+}
+
+header ul li{
+    margin-left: 20px;
+}
+header ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+header div{
+    text-align: center;
+    color: rgb(168, 159, 159);
+    line-height: 135px;
+    font-size: 40px;
+}
+
+
+
+/*=========section===============*/
+h1{
+    position: fixed;
+    color: white;
+    left: 50px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("assets/fundoh.png");
+    padding-top: 10px;
+}
+
+
+.j1-img{
+    background-image: url("assets/pedro.jpeg");
+    background-size: cover;
+    height:270px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.j1-text ul{
+    list-style-type: none;
+}
+
+.jogador-1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 300px;
+    margin-right: 30px;
+}
+
+.j2-img{
+    background-image: url("assets/gabigol.jpeg");
+    background-size: cover;
+    height:270px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.j2-text ul{
+    list-style-type: none;
+}
+
+.jogador-2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/*===============footer============*/
+footer{
+    background-color: gray;
+    height: 50px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
